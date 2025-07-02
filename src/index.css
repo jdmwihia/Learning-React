@@ -1,0 +1,148 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+}
+
+footer{
+  text-align: center;
+  padding: 1rem;
+  color: #f8fafc;
+}
+
+.Header {
+  background-color: #0f172a; /* slate-900 */
+  color: #f8fafc; /* slate-50 */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Project {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.NavBar {
+  display: flex;            
+  align-items: center;       
+  gap: 2rem;              
+}
+
+.NavLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.NavLinks a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.NavLinks a:hover {
+  color: #38bdf8;
+}
+
+.AuthButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.LoginBtn, .SignUpBtn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.LoginBtn {
+  background-color: transparent;
+  border: 1px solid #f8fafc;
+  color: #f8fafc;
+}
+
+.LoginBtn:hover {
+  background-color:#1e293b;
+  color: #38bdf8;
+}
+
+.SignUpBtn {
+  background-color: #38bdf8; /* sky-400 */
+  color: #0f172a;
+  border: none;
+}
+
+.SignUpBtn:hover {
+  background-color: #1199cf;
+  color: #f8fafc;
+}
+
+/* Modal overlay */
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.8); /* dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.ModalContent {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Close button */
+.ModalClose {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Form inputs and buttons */
+form input {
+  display: block;
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1e293b;
+}
